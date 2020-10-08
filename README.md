@@ -14,7 +14,7 @@ scram b -j8
 cd strips_radiation_damage_2016/raddam_2016/  
 cmsRun config_cfg.py name=fill5043  
 
-note: the code is set to run over the skimmed data in:  
+This code is set to run over the skimmed data in:  
 /eos/cms/store/group/phys_pps/reconstruction/2016/physics_runs/version-UL-2/   
 the "name=fill5043" sets the file that will be used.  
 

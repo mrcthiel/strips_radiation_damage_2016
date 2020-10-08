@@ -604,7 +604,7 @@ raddam_2016::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 				x_mine = track.getX0();
 				y_mine = track.getY0();
 
-				histos.at(nn)->Fill(x_mine,y_mine);
+//				histos.at(nn)->Fill(x_mine,y_mine);
 //                                histos.at(nn)->Fill(x_official,y_official);
 
 				bool save_U = false;
@@ -768,8 +768,8 @@ raddam_2016::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
 
 				if(save_V && save_U){
-				  histos.at(nn+5)->Fill(x_mine,y_mine);
-                                  //histos.at(nn+5)->Fill(x_official,y_official);
+				  histos.at(nn)->Fill(x_mine,y_mine);
+                                  //histos.at(nn)->Fill(x_official,y_official);
 				}
 			}
 		}

@@ -22,6 +22,8 @@ In the output.root file there are the x-y distributions excluding a U-V pair. Fo
 
 To count an event in the histogram x_y_0, the planes 0 and 1 (the ones that are turned off) need to have a consistent hit compared with the other planes. It is made in lines 613-766 in plugins/raddam_2016.cc. For example the hit in 0 needs at least match with one hit in 2 or 4 or 6 or 8, the U planes. To check the match, histograms doing all de differences (plane_0 - plane_2, plane_1 - plane_3, ...) are build previously (raddam_2016/parameters.root). The same is made for x_y_1, x_y_2, x_y_3 and x_y_4.  
 
+To evaluate the efficiency of each pair, just divide the histograms per x_y_all_planes. For example, eff_0 =  x_y_0/x_y_all_planes.
+
 # Running on condor  
 An example to run this code using condor is in condor_sub/ directory. The to run over the 2016 DoubleEG C, the ListOfFiles_C.txt can be used. Before running condor, just compress the CMSSW and strips_radiation_damage_2016 directories in the files CMSSW.tar.gz and raddam_2016.tar.gz respectively.  
 

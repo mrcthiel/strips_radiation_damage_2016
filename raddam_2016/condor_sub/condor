@@ -1,0 +1,25 @@
+universe = vanilla
+Executable = sub.csh
+Requirements = (OpSysAndVer =?= "CentOS7")
+#request_disk = 10000000
+#request_memory = 4000
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT
+
+transfer_input_files = CMSSW.tar.gz, raddam_2016.tar.gz, config_cfg.py
+
+
+#transfer_output_files = 
+
++JobFlavour = "nextweek"
+
+notification = Never
+#Output     = test/output_$(ProcId).out
+#Error      = test/output_$(ProcId).err
+#Log        = test/output_$(ProcId).log
+
+#x509userproxy = ${X509_USER_PROXY}
+x509userproxy = /afs/cern.ch/user/m/mthiel/x509up_u71099
+#Queue 1
+queue arguments from ListOfFiles_C.txt
+

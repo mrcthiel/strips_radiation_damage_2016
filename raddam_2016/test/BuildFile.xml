@@ -1,0 +1,4 @@
+<bin file="test_catch2_*.cc" name="testraddam_2016raddam_2016TP">
+  <use name="FWCore/TestProcessor"/>
+  <use name="catch2"/>
+</bin>
